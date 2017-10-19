@@ -1,0 +1,274 @@
+body {
+	font-family: "Crimson Text", "Times New Roman", serif;
+	background-color: #F2FFFC;
+	font-size: 120%;
+	line-height: 1.5;
+}
+
+h1,
+h2,
+.subtitulo-principal {
+	font-family: "Open Sans Condensed", "Arial", sans-serif;
+}
+
+.titulo-principal {
+	text-align: center;
+	background-color: #851944;
+	color: #FFF;
+	padding: 2rem;
+	border-bottom: 0.5rem solid black;
+}
+
+p {
+	text-align: justify;
+	margin: 1rem 0;
+}
+
+.navegacao-site {
+	text-align: center;
+	background-color: #3C1D3D;
+	color: #F2FFFC;
+	top: 300px;
+	width: calc(0.9 * 300px);
+}
+
+.rodape-pagina {
+	color: #F2FFFC;
+	clear: both;
+	background-image: radial-gradient(ellipse at left bottom,
+    rgba(60, 29, 61, 0.8),
+    rgba(60, 29, 61, 0.8) 65%,
+    black 65%,
+    black 70%,
+    transparent 70%,
+    transparent);
+	width:100%;
+	background-size: 25% 100%;
+	background-repeat: no-repeat;
+}
+
+main a {
+	color: #851944;
+}
+
+.navegacao-site a {
+	color: inherit;
+	font-family: "Open Sans Condensed", sans-serif;
+}
+
+.citacao-bio, .navegacao-site, .rodape-pagina {
+    padding: 20px;
+}
+
+.navegacao-site h1 {
+	font-size: 1.5em;
+	margin-bottom: 1em;
+}
+
+strong {
+	font-weight: bold;
+}
+
+em {
+	font-style: italic;
+}
+
+.subtitulo-texto {
+	font-size: 1.5em;
+	clear: both;
+}
+
+.icones-redes-sociais li {
+	display: inline-block;
+}
+
+nav a {
+	text-transform: lowercase;
+}
+
+.icones-redes-sociais a {
+	width: 40px;
+    height: 40px;
+    display: block;
+    text-indent: -99999px;
+    position: relative;
+}
+
+.icones-redes-sociais a:hover::after, 
+.icones-redes-sociais a:focus::after {
+	content: attr(data-tooltip);
+	position: absolute;
+	top: 100%;
+	right: 0;
+	text-indent: 0;
+	width: 300%;
+	background: black;
+	font-size: 0.75em;
+}
+
+.icones-redes-sociais a:hover::before, 
+.icones-redes-sociais a:focus::before {
+	content: '';
+	width: 1em;
+	height: 1em;
+	background-color: black;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	transform: translateY(0.5em) rotate(45deg);
+}
+
+.icones-sociais a {
+    background-image: url(img/github.png);
+    width: 40px;
+    height: 40px;
+    display: block;
+    text-indent: -99999px;
+}
+
+.github {
+    background-image: url(../img/github.png);
+}
+
+.twitter {
+    background-image: url(../img/twitter.png);
+}
+
+.linkedin {
+    background-image: url(../img/linkedin.png);
+}
+
+h1 {
+	text-transform: uppercase;
+}
+
+h2 {
+	clear: both;
+}
+
+main {
+	float: left;
+	padding-bottom: 4em;
+	width: calc(100% - 0.9 * 300px);
+}
+
+main a:hover,
+main a:focus,
+footer a:hover
+footer a:focus {
+	color: red;		
+}
+
+.navegacao-site a:hover,
+.navegacao-site a:focus {
+	text-shadow: 0 0 2px pink;
+}
+
+footer {
+	clear: both;
+    bottom: 0;
+    left: 0;
+	box-sizing: border-box;
+}
+
+aside {
+	width: 20%;
+	float: right;
+	box-sizing: border-box;
+	top: 310px;
+	position: relative !important;
+}
+
+.container {
+	width: 720px;
+	margin: auto;
+	padding: 30px 0;
+}
+
+.minha-foto {
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 300px;
+}
+
+.minha-foto,
+.navegacao-site {
+	box-sizing: border-box;
+	border-left: 10px solid black;
+    border-bottom: 10px solid black;
+    position: absolute;
+}
+
+.minha-foto img {
+    height: 300px;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+legend,
+label[for="mensagem"] {
+    font-weight: bold;
+    margin-top: 1em;
+}
+
+label[for] {
+    display: block;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    font-family: inherit;
+    font-size: 100%;
+    padding: .25em .5em;
+    width: 100%;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+}
+
+fieldset > fieldset {
+    display: inline;
+}
+
+label[for="outro"] {
+    display: inline;
+}
+
+input[name="outro-assunto"] {
+    width: auto;
+}
+
+input:focus,
+textarea:focus {
+    background-color: #FFD;
+}
+
+input:invalid {
+    box-shadow: 0 0 3px red;
+}
+
+button {
+    border: 0;
+    padding: .5em 1em;
+    font-family: "Open Sans Condensed", sans-serif;
+    background-color: #3C1D3D;
+    color: white;
+    font-size: 1.2em;
+    margin-left: auto;
+    margin-top: 1em;
+}
+
+button:hover,
+button:focus {
+    background-color: #8C1D3D;
+}
+
+input[value="outro"] ~ input {
+	display: none;
+}
+
+input[value="outro"]:checked ~ input {
+    display: inline;
+}

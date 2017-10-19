@@ -1,0 +1,56 @@
+.citacao-bio {
+    background-color: #D9E5E3;
+    border: 10px solid #C2CCCA;
+    width: 250px;
+    box-sizing: border-box;
+    margin: 20px 40px;
+    padding: 20px;
+}
+
+.citacao-bio::before {
+    content: '“';
+    position: absolute;
+    font-size: 10em;
+    color: #bbb;
+    line-height: .8;
+}
+
+.citacao-bio > p {
+    position: relative;
+}
+
+cite {
+    font-style: italic;
+    float: right;
+}
+
+.citacao-bio:nth-of-type(odd) {
+	 float: right;
+}
+
+.citacao-bio:nth-of-type(even) {
+    float: left;
+}
+
+.citacao-bio:hover,
+.citacao-bio:focus {
+	box-shadow: 0 0 0 99999px rgba(0,0,0,.8);
+}
+
+.citacao-bio:nth-of-type(even):hover,
+.citacao-bio:nth-of-type(even):focus {
+	transform: scale(1.2) rotate(-5deg)
+}
+
+.citacao-bio:nth-of-type(odd):hover,
+.citacao-bio:nth-of-type(odd):focus {
+    transform: scale(1.2) rotate(5deg);
+}
+
+.container > p::first-letter {
+    font-size: 200%;
+    font-weight: bold;
+    color: #3C1D3D;
+    text-shadow: 1px 1px #000;
+    line-height: 1;
+}
