@@ -17,6 +17,7 @@ h2,
 	color: #FFF;
 	padding: 2rem;
 	border-bottom: 0.5rem solid black;
+	font-size: 3em;
 }
 
 p {
@@ -328,4 +329,10 @@ input[value="outro"]:checked ~ input {
 	border-collapse: separate;
 	border-spacing: .25em;
 	margin: 1em 0;
+}
+
+.habilidades [colspan] {
+	text-align: center;
+	vertical-align: middle;
+	font-style: italic;
 }
